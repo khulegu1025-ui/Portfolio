@@ -102,7 +102,10 @@
         <ul>
             <li><strong>Asia University</strong> – Bachelor's Degree (Current)</li>
             <li>Major: Computer Science</li>
-            <li>Expected Graduation: 202X</li>
+            <li>Expected Graduation: 2029</li>
+            <li><strong>M-smart Academy</strong> - Pre-bachelor's degree</li>
+            <li>Major: Computer Science</li>
+            <li>Graduated: 2022</li>
         </ul>
     </section>
 
@@ -116,8 +119,47 @@
             <span>Problem Solving</span>
             <span>Teamwork</span>
         </div>
+        <h2>Extra Curricular Activities</h2>
+        <ul>
+            <li></li>
+            <li>Volunteer at local community tech workshops</li>
     </section>
+    <section>
+        <h2>Awards & Achievements</h2>
+            <ul id="achievementsList"></ul>
+    </section>
+    <script>
+        const achievements = [
+             { year: 2013, title: "Chingeltei District Rhythmic Gymnastics Championship", result: "2nd Place – Silver Medal" },
+            { year: 2014, title: "School #24 Mental Math Competition", result: "3rd Place – Bronze Medal" },
+            { year: 2015, title: "“Thank You Japan” Art Competition (Japanese Embassy)", result: "2nd Place – Certificate" },
+            { year: 2016, title: "School #24 Problem-Solving Mathematics Olympiad", result: "2nd Place" },
+            { year: 2017, title: "“My Teacher” Art Competition – Erdem Altai School", result: "1st Place – Gold Medal" },
+            { year: 2017, title: "Kangaroo Mathematics Olympiad", result: "3rd Degree Award" },
+            { year: 2018, title: "Magic Square Mathematics Olympiad (9th)", result: "3rd Place – Bronze Medal" },
+            { year: 2019, title: "“Intellectual Speed” Mathematics Olympiad", result: "2nd Degree Diploma" },
+            { year: 2021, title: "School #31 Volleyball Championship", result: "2nd Place – Silver Medal" },
+            { year: 2021, title: "School #31 Football Championship", result: "1st Place – Gold Medal" },
+            { year: 2021, title: "Best Athlete Student of the Year", result: "Gold Medal" },
+            { year: 2022, title: "School #31 Volleyball Championship", result: "3rd Place – Bronze Medal" },
+            { year: 2022, title: "Ehlel Academy Software Engineering Certification", result: "Diploma" },
+            { year: 2022, title: "Ehlel Academy Basketball Championship", result: "2nd Place – Silver Medal" },
+            { year: 2023, title: "School #31 Volleyball Championship", result: "3rd Place – Bronze Medal" },
+            { year: 2023, title: "School #31 Basketball Championship", result: "3rd Place – Bronze Medal" },
+            { year: 2023, title: "Russian 3x3 Basketball Tournament", result: "3rd Place – Bronze Medal" },
+            { year: 2023, title: "Sukhbaatar District Volleyball League Championship", result: "2nd Place – Silver Medal" }
+        ];
 
+        const list = document.getElementById("achievementsList");
+
+        achievements
+            .sort((a, b) => b.year - a.year)
+            .forEach(item => {
+                const li = document.createElement("li");
+                li.innerHTML = `<strong>${item.year}</strong> – ${item.title} | ${item.result}`;
+                list.appendChild(li);
+            });
+    </script>
     <section>
         <h2>Projects</h2>
         <ul>
