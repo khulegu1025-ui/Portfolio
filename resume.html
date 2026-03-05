@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - 114021139</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #1e88e5;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #1e88e5;
+        }
+
+        header p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #1e88e5;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1e88e5;
+            padding: 6px 12px;
+            margin: 5px 5px 5px 0;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        button {
+            background: #1e88e5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 id="name">Khulegu Tumennast</h1>
+        <p>Asia University Student</p>
+        <p>Student ID: 114021139</p>
+        <p>Email: khulegu1025@gmail.com | Phone: +886-XXXXXXXXX</p>
+    </header>
+
+    <section>
+        <h2>Profile</h2>
+        <p id="profileText">Motivated Asia University student with strong interest in technology, problem-solving, and software development. Passionate about continuous learning and innovation.</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Asia University</strong> – Bachelor's Degree (Current)</li>
+            <li>Major: Computer Science</li>
+            <li>Expected Graduation: 202X</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Problem Solving</span>
+            <span>Teamwork</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Personal Portfolio Website</strong> – Built using HTML, CSS, JavaScript.</li>
+            <li><strong>Student Management System</strong> – Developed using Python.</li>
+        </ul>
+    </section>
+
+    <section id="extraSection" class="hidden">
+        <h2>Additional Information</h2>
+        <p>Volunteer experience, leadership roles, certifications, or other achievements can be added here.</p>
+    </section>
+
+    <button onclick="toggleSection()">Toggle Additional Info</button>
+</div>
+
+<script>
+    function toggleSection() {
+        const section = document.getElementById('extraSection');
+        section.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>
