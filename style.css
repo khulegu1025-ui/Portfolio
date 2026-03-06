@@ -1,75 +1,81 @@
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #2a4f87;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Slightly darker for better contrast */
+    color: #f0f0f0;      /* Sets default text to off-white */
+}
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: rgb(105, 18, 18);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #1a1a1a; /* Dark grey container */
+    padding: 40px;
+    border-radius: 12px;
+    /* Changed shadow to be dark so it looks natural */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); 
+}
 
-        header {
-            text-align: center;
-            border-bottom: 2px solid #061523;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
+header {
+    text-align: center;
+    border-bottom: 2px solid #333333; /* Subpler divider */
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-            color: #1e88e5;
-        }
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #ffffff; /* Pure white for the main title */
+}
 
-        header p {
-            margin: 5px 0;
-            color: #555;
-        }
+header p {
+    margin: 5px 0;
+    color: #bbbbbb; /* Medium grey for the subtitle */
+}
 
-        section {
-            margin-bottom: 30px;
-        }
+section {
+    margin-bottom: 30px;
+}
 
-        section h2 {
-            color: #1e88e5;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
+section h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #333333; /* Darker border for sections */
+    padding-bottom: 5px;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+ul {
+    padding-left: 20px;
+    color: #e0e0e0; /* Slightly dimmer white for list items */
+}
 
-        .skills span {
-            display: inline-block;
-            background: #e3f2fd;
-            color: #1e88e5;
-            padding: 6px 12px;
-            margin: 5px 5px 5px 0;
-            border-radius: 20px;
-            font-size: 14px;
-        }
+.skills span {
+    display: inline-block;
+    background: #333333; /* Dark background for tags */
+    color: #ffffff;      /* White text for tags */
+    padding: 6px 12px;
+    margin: 5px 5px 5px 0;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid #444; /* Small border to help them pop */
+}
 
-        button {
-            background: #1e88e5;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 6px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
+button {
+    background: #ffffff; /* White button */
+    color: #1a1a1a;      /* Dark text on button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
 
-        button:hover {
-            background: #1565c0;
-        }
+button:hover {
+    background: #cccccc; /* Light grey on hover */
+}
 
-        .hidden {
-            display: none;
-        }
+.hidden {
+    display: none;
+}
