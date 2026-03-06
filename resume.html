@@ -5,11 +5,11 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - 114021139</title>
-
 </head>
 <body>
 
 <div class="container">
+    
     <header>
         <h1 id="name">Khulegu Tumennast</h1>
         <p>Asia University Student</p>
@@ -17,91 +17,103 @@
         <p>Email: khulegu1025@gmail.com | Phone: +886-XXXXXXXXX</p>
     </header>
 
-    <section>
-        <h2>Profile</h2>
-        <p id="profileText">Motivated Asia University student with strong interest in technology, problem-solving, and software development. Passionate about continuous learning and innovation.</p>
-    </section>
+    <div class="resume-layout">
+        <aside class="sidebar">
+            <section>
+                <h2>Profile</h2>
+                <p id="profileText">Motivated Asia University student with strong interest in technology, problem-solving, and software development. Passionate about continuous learning and innovation.</p>
+            </section>
+            <section> 
+                <h2>Languages</h2>
+                <p><strong>English</strong> - Proficient</p>
+                <p><strong>Mongolian</strong> - Native</p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>C#</span>
+                    <span>Python</span>
+                    <span>Problem Solving</span>
+                    <span>Teamwork</span>
+                    
+                </div>
+            </section>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Asia University</strong> – Bachelor's Degree (Current)</li>
-            <li>Major: Computer Science</li>
-            <li>Expected Graduation: 2029</li>
-            <li><strong>M-smart Academy</strong> - Pre-bachelor's degree</li>
-            <li>Major: Computer Science</li>
-            <li>Graduated: 2022</li>
-        </ul>
-    </section>
+            <section>
+                <h2>Extra Curricular</h2>
+                <ul>
+                    <li>Volunteer at local community tech workshops</li>
+                </ul>
+            </section>
+        </aside>
 
-    <section>
-        <h2>Skills</h2>
-        <div class="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>Problem Solving</span>
-            <span>Teamwork</span>
-        </div>
-        <h2>Extra Curricular Activities</h2>
-        <ul>
-            <li></li>
-            <li>Volunteer at local community tech workshops</li>
-    </section>
-    <section>
-        <h2>Awards & Achievements</h2>
-            <ul id="achievementsList"></ul>
-    </section>
-    <script>
-        const achievements = [
-             { year: 2013, title: "Chingeltei District Rhythmic Gymnastics Championship", result: "2nd Place – Silver Medal" },
-            { year: 2014, title: "School #24 Mental Math Competition", result: "3rd Place – Bronze Medal" },
-            { year: 2015, title: "“Thank You Japan” Art Competition (Japanese Embassy)", result: "2nd Place – Certificate" },
-            { year: 2016, title: "School #24 Problem-Solving Mathematics Olympiad", result: "2nd Place" },
-            { year: 2017, title: "“My Teacher” Art Competition – Erdem Altai School", result: "1st Place – Gold Medal" },
-            { year: 2017, title: "Kangaroo Mathematics Olympiad", result: "3rd Degree Award" },
-            { year: 2018, title: "Magic Square Mathematics Olympiad (9th)", result: "3rd Place – Bronze Medal" },
-            { year: 2019, title: "“Intellectual Speed” Mathematics Olympiad", result: "2nd Degree Diploma" },
-            { year: 2021, title: "School #31 Volleyball Championship", result: "2nd Place – Silver Medal" },
-            { year: 2021, title: "School #31 Football Championship", result: "1st Place – Gold Medal" },
-            { year: 2021, title: "Best Athlete Student of the Year", result: "Gold Medal" },
-            { year: 2022, title: "School #31 Volleyball Championship", result: "3rd Place – Bronze Medal" },
-            { year: 2022, title: "Ehlel Academy Software Engineering Certification", result: "Diploma" },
-            { year: 2022, title: "Ehlel Academy Basketball Championship", result: "2nd Place – Silver Medal" },
-            { year: 2023, title: "School #31 Volleyball Championship", result: "3rd Place – Bronze Medal" },
-            { year: 2023, title: "School #31 Basketball Championship", result: "3rd Place – Bronze Medal" },
-            { year: 2023, title: "Russian 3x3 Basketball Tournament", result: "3rd Place – Bronze Medal" },
-            { year: 2023, title: "Sukhbaatar District Volleyball League Championship", result: "2nd Place – Silver Medal" }
-        ];
+        <main class="main-content">
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Asia University</strong> – Bachelor's Degree (Current)</li>
+                    <li>Major: Computer Science | Expected Graduation: 2029</li>
+                    <li><strong>M-smart Academy</strong> - Pre-bachelor's degree</li>
+                    <li>Major: Computer Science | Graduated: 2022</li>
+                </ul>
+            </section>
 
-        const list = document.getElementById("achievementsList");
+            <section>
+                <h2>Awards & Achievements</h2>
+                <ul id="achievementsList"></ul>
+            </section>
 
-        achievements
-            .sort((a, b) => b.year - a.year)
-            .forEach(item => {
-                const li = document.createElement("li");
-                li.innerHTML = `<strong>${item.year}</strong> – ${item.title} | ${item.result}`;
-                list.appendChild(li);
-            });
-    </script>
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Personal Portfolio Website</strong> – Built using HTML, CSS, JavaScript.</li>
-            <li><strong>Student Management System</strong> – Developed using Python.</li>
-        </ul>
-    </section>
+            <section>
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Personal Portfolio Website</strong> – Built using HTML, CSS, JavaScript.</li>
+                    <li><strong>Student Management System</strong> – Developed using Python.</li>
+                </ul>
+            </section>
 
-    <section id="extraSection" class="hidden">
-        <h2>Additional Information</h2>
-        <p>Volunteer experience, leadership roles, certifications, or other achievements can be added here.</p>
-    </section>
+            <section id="extraSection" class="hidden">
+                <h2>Additional Information</h2>
+                <p>Volunteer experience, leadership roles, certifications, or other achievements can be added here.</p>
+            </section>
 
-    <button onclick="toggleSection()">Toggle Additional Info</button>
-</div>
+            <button onclick="toggleSection()">Toggle Additional Info</button>
+        </main>
+    </div> </div> <script>
+    // Achievements Logic
+    const achievements = [
+        { year: 2013, title: "Chingeltei District Rhythmic Gymnastics Championship", result: "2nd Place – Silver Medal" },
+        { year: 2014, title: "School #24 Mental Math Competition", result: "3rd Place – Bronze Medal" },
+        { year: 2015, title: "“Thank You Japan” Art Competition (Japanese Embassy)", result: "2nd Place – Certificate" },
+        { year: 2016, title: "School #24 Problem-Solving Mathematics Olympiad", result: "2nd Place" },
+        { year: 2017, title: "“My Teacher” Art Competition – Erdem Altai School", result: "1st Place – Gold Medal" },
+        { year: 2017, title: "Kangaroo Mathematics Olympiad", result: "3rd Degree Award" },
+        { year: 2018, title: "Magic Square Mathematics Olympiad (9th)", result: "3rd Place – Bronze Medal" },
+        { year: 2019, title: "“Intellectual Speed” Mathematics Olympiad", result: "2nd Degree Diploma" },
+        { year: 2021, title: "School #31 Volleyball Championship", result: "2nd Place – Silver Medal" },
+        { year: 2021, title: "School #31 Football Championship", result: "1st Place – Gold Medal" },
+        { year: 2021, title: "Best Athlete Student of the Year", result: "Gold Medal" },
+        { year: 2022, title: "School #31 Volleyball Championship", result: "3rd Place – Bronze Medal" },
+        { year: 2022, title: "Ehlel Academy Software Engineering Certification", result: "Diploma" },
+        { year: 2022, title: "Ehlel Academy Basketball Championship", result: "2nd Place – Silver Medal" },
+        { year: 2023, title: "School #31 Volleyball Championship", result: "3rd Place – Bronze Medal" },
+        { year: 2023, title: "School #31 Basketball Championship", result: "3rd Place – Bronze Medal" },
+        { year: 2023, title: "Russian 3x3 Basketball Tournament", result: "3rd Place – Bronze Medal" },
+        { year: 2023, title: "Sukhbaatar District Volleyball League Championship", result: "2nd Place – Silver Medal" }
+    ];
 
-<script>
+    const list = document.getElementById("achievementsList");
+    achievements
+        .sort((a, b) => b.year - a.year)
+        .forEach(item => {
+            const li = document.createElement("li");
+            li.innerHTML = `<strong>${item.year}</strong> – ${item.title} | ${item.result}`;
+            list.appendChild(li);
+        });
+
+    // Toggle Logic
     function toggleSection() {
         const section = document.getElementById('extraSection');
         section.classList.toggle('hidden');
