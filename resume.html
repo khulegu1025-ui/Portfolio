@@ -22,11 +22,11 @@
         <aside class="sidebar">
             <section>
                 <h2>Profile</h2>
-                <p id="profileText">Motivated Asia University student with strong interest in technology, problem-solving, and software development. Passionate about continuous learning and innovation.</p>
+                <p id="profileText">Computer Science student at Asia University with over three years of hands-on programming experience. Proven track record of developing functional projects using the .NET ecosystem and modern web technologies. Highly motivated to apply technical expertise in C# and ASP.NET to innovative software development roles.</p>
             </section>
             <section> 
                 <h2>Languages</h2>
-                <p><strong>English</strong> - Proficient</p>
+                <p><strong>English</strong> - Proficient - C1</p>
                 <p><strong>Mongolian</strong> - Native</p>
             </section>
             <section>
@@ -48,6 +48,20 @@
                 <ul>
                     <li>Volunteer at local community tech workshops</li>
                 </ul>
+            </section>
+            <section>
+                <h2>Interests</h2>
+                <div class="Interest">
+                    <span>Volleyball</span>
+                    <span>Basketball</span>
+                    <span>Chess</span>
+                    <span>Games</span>
+                    <span>Music</span>
+                    <span>Cooking</span>
+                    <span>Photography</span>
+                    <span>Traveling and Cultural Exchange</span>
+                </div>
+       
             </section>
         </aside>
 
@@ -71,7 +85,9 @@
                 <h2>Projects</h2>
                 <ul>
                     <li><strong>Personal Portfolio Website</strong> – Built using HTML, CSS, JavaScript.</li>
-                    <li><strong>Student Management System</strong> – Developed using Python.</li>
+                    <li><strong>Student Management System</strong> – Developed using C#, SQL, HTML, CSS, JavaScript and ASP.NET.</li>
+                    <li><strong>Movie Ticket Booking System</strong> – Developed using C#, SQL, HTML, CSS, JavaScript and ASP.NET.</li>
+                    <li><strong>YouTube Clone</strong> – Developed using C#, SQL, HTML, CSS, JavaScript and ASP.NET.</li>
                 </ul>
             </section>
 
@@ -85,7 +101,7 @@
     </div> </div> <script>
     // Achievements Logic
     const achievements = [
-        { year: 2013, title: "Chingeltei District Rhythmic Gymnastics Championship", result: "2nd Place – Silver Medal" },
+        /*{ year: 2013, title: "Chingeltei District Rhythmic Gymnastics Championship", result: "2nd Place – Silver Medal" },
         { year: 2014, title: "School #24 Mental Math Competition", result: "3rd Place – Bronze Medal" },
         { year: 2015, title: "“Thank You Japan” Art Competition (Japanese Embassy)", result: "2nd Place – Certificate" },
         { year: 2016, title: "School #24 Problem-Solving Mathematics Olympiad", result: "2nd Place" },
@@ -96,13 +112,13 @@
         { year: 2021, title: "School #31 Volleyball Championship", result: "2nd Place – Silver Medal" },
         { year: 2021, title: "School #31 Football Championship", result: "1st Place – Gold Medal" },
         { year: 2021, title: "Best Athlete Student of the Year", result: "Gold Medal" },
-        { year: 2022, title: "School #31 Volleyball Championship", result: "3rd Place – Bronze Medal" },
+        { year: 2022, title: "School #31 Volleyball Championship", result: "3rd Place – Bronze Medal" }, */
         { year: 2022, title: "Ehlel Academy Software Engineering Certification", result: "Diploma" },
-        { year: 2022, title: "Ehlel Academy Basketball Championship", result: "2nd Place – Silver Medal" },
+        /*{ year: 2022, title: "Ehlel Academy Basketball Championship", result: "2nd Place – Silver Medal" },
         { year: 2023, title: "School #31 Volleyball Championship", result: "3rd Place – Bronze Medal" },
         { year: 2023, title: "School #31 Basketball Championship", result: "3rd Place – Bronze Medal" },
         { year: 2023, title: "Russian 3x3 Basketball Tournament", result: "3rd Place – Bronze Medal" },
-        { year: 2023, title: "Sukhbaatar District Volleyball League Championship", result: "2nd Place – Silver Medal" }
+        { year: 2023, title: "Sukhbaatar District Volleyball League Championship", result: "2nd Place – Silver Medal" }*/
     ];
 
     const list = document.getElementById("achievementsList");
@@ -114,7 +130,7 @@
             list.appendChild(li);
         });
 
-    // Toggle Logic
+    
     function toggleSection() {
         const section = document.getElementById('extraSection');
         section.classList.toggle('hidden');
